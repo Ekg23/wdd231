@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <meta name="description" content="This is the home page for the course website.">
+    <meta name="author" content="Geoffrey Etu">
+    <script src="scripts/homepage.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Course Home Page</title>
+</head>
+<body>
+    <header>
+        <img src="images/homepage_icon.svg" alt="Course Logo" id="logo">
+        <span>Etu Geoffrey</span>
+        <button id="ham-btn" class="hamburger" type="submit"   aria-label="Open navigation menu" 
+  aria-expanded="false" 
+  aria-controls="mobileMenu"
+></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Homepage</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="content">
+            <div class="course-info">
+            <h2>About me</h2>
+            <p>This website serves as the central hub for all course-related materials, including assignments, projects, and resources. Stay tuned for updates and new content!</p>
+            </div>
+            <div class="student-photo">
+                <h2>Student Photo</h2>
+                <img src="images/profile.jpg" alt=" Geoffrey Etu photo">
+            </div>
+        </section>
+        <section class="courses">
+        <h2>Certificate Courses</h2>
+            <div class="filters">
+                <button id="allBtn">All</button>
+                <button id="wddBtn">WDD</button>
+                <button id="cseBtn">CSE</button>
+            </div>
+            <div id="courseContainer"></div>
+            <p>Total Credits: <span id="creditTotal"></span></p>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com/geoffrey.etu.7" target="_blank">
+                <img src="images/facebook_icon.svg" alt="Facebook Logo" width="16" height="16">
+            </a>
+            <a href="https://twitter.com/GeoffreyEtu" target="_blank">
+                <img src="images/twitter_icon.svg" alt="Twitter Logo" width="16" height="16">
+            </a>
+            <a href="https://www.instagram.com/geoffrey_etu/" target="_blank">
+                <img src="images/instagram_icon (1).svg" alt="Instagram Logo" width="16" height="16">
+            </a>
+            <a href="https://www.linkedin.com/in/geoffrey-kofi-etu-9273a5242/" target="_blank">
+                <img src="images/linkedin_icon.svg" alt="LinkedIn Logo" width="16" height="16">
+            </a>
+            <a href="https://www.github.com/GeoffreyEtu" target="_blank">
+                <img src="images/github_icon.svg" alt="GitHub Logo" width="16" height="16">
+            </a>
+        </div>    
+        <p>©️<span id="currentyear"></span>|Geoffrey Etu|Ghana</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

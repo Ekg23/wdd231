@@ -1,0 +1,269 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    align-items: end;
+    gap: 8px;
+    padding: 0 3px 0 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: rgb(65, 65, 95);
+}
+
+/* Nagibation Menu */
+.navigation {
+  display: none;
+}
+
+.navigation.show {
+  display: block;
+  background-color: #2a5b8b;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+
+}
+
+.navigation li.current {
+    background-color: #3f4143;
+}
+
+.navigation a:hover {
+    background-color: rgb(74, 129, 218);
+    color: white;
+}
+
+/* Hamburger Menu Button */
+.hamburger {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 1.5rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+
+h1 {
+    margin-left: 10px;
+    color: rgb(65, 65, 95);
+}
+
+.student-photo img {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.content {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+.content .course-info {
+    height: 300px;
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.content .course-info p {
+    padding: 0.5rem 10px;
+    font-size: medium;
+}
+
+.content .course-info h2, .content .student-photo h2 {
+    text-align: center;
+    background-color: #1e4c97ff;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.content .student-photo {
+    height: 300px;
+    width: 100%;
+    border: 1px solid #ccc;
+    background-color: #ddd;
+    border-radius: 5px;
+    position: relative;
+}
+
+
+/* Footer */
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;    
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #ddd;
+    bottom: 4px;
+}
+
+.social img {
+    width: 24px;
+    height: 24px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
+
+main {
+    margin-bottom: 20px;
+}
+
+/* Course Buttons Styling */
+#courseContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+#courseContainer button {
+    text-align: center;
+    width: 90%;
+    margin: 5px auto;
+}
+
+.course-btn {
+    padding: 1rem;
+    border: 2px solid #444;
+    border-radius: 12px;
+    background: #f8f8f8;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+    width: 160px;
+    text-align: left;
+    line-height: 1.3;
+}
+
+
+.course-btn:hover {
+    transform: scale(1.04);
+    background: #eaeaea;
+}
+
+
+#courseContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.filters button {
+  padding: 10px 18px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #444;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.filters button:hover {
+  background: #005c99;
+}
+
+
+/* Completed Courses */
+#courseContainer button.completed {
+    background: #c6ffd0;
+    border-color: #2e8b57;
+    font-weight: bold;
+}
+
+
+#courseContainer button:hover {
+    background: #b2f5be;
+}
+
+
+/* Filter Buttons */
+.filters {
+display: flex;
+gap: 1rem;
+margin-bottom: 1rem;
+}
+
+
+
+.courses {
+    margin-top: 20px;
+    text-align: center;
+
+}
+.courses h2 {
+    background-color: #1e4c97ff;
+    color: white;
+}

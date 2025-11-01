@@ -1,0 +1,50 @@
+@media screen and (min-width: 32rem) {
+    body {
+        font-size: 18px;
+    }
+
+    header, main, nav, footer {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    header {
+        grid-template-columns: 24px auto;
+    }
+    .hamburger {
+        display: none;
+    }
+    .navigation {
+        display: block;
+        border: 1px solid #ddd;
+        color: black;
+        background-color: #2a5b8b;
+
+    }
+    .navigation ul {
+        display: flex;
+    }
+    .navigation a {
+        border: none;
+    }
+
+    .content {
+        grid-template-columns:2fr 1fr;
+        gap: 20px;
+    }
+
+    #courseContainer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3px;
+        margin: 20px 10px 0 10px;
+        width: 100%;
+    }
+
+    .student-photo img {
+        width: 300px;
+        height: 250px;
+        border-radius: 5px;
+        object-fit: contain;
+        margin: 0 auto;
+    }
+}
