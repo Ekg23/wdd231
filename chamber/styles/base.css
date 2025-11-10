@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+nav {
+    width: 100%;
+    display: none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header .logo img {
+    width: 44px;
+    height: 44px;
+}
+
+
+header span {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    width:auto
+}
+
+
+/* Hamburger Menu Button */
+.hamburger {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 1.5rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+
+.navigation.show {
+  display: block;
+  background-color: #2a5b8b;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem 0 0.8rem 0;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    margin: 0;
+
+
+}
+
+.navigation li.current {
+    background-color: #3f4143;
+}
+
+.navigation a:hover {
+    background-color: rgb(74, 129, 218);
+    color: white;
+}
+
+/* Main Content */
+main {
+    margin-top: 20px;
+}
+
+h2{
+    text-align: center;
+    font-size: .8rem;
+}
+
+p{
+    font-size: .5rem;
+}
+.banner-image {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.directory-container {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.directory-container.grid-view {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.directory-container div {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #ddd;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.directory-container div  a{
+    display: inline-block;        
+    margin-top: 8px;
+    color: #2a5b8b;
+    text-decoration: none;
+    font-weight: 600;
+    word-wrap: break-word;        
+    overflow-wrap: break-word;    
+    word-break: break-word; 
+}
+
+.directory-container.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 20px;
+}
+
+.directory-container.grid-view div img {
+    max-width: 100%;   
+    height: auto;      
+    display: block;    
+    margin: 0 auto;
+}
+
+/* Each card in List View */
+.directory-container.list-view div {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-size: 0.9rem; 
+}
+
+/* Adjust image size in List View */
+.directory-container.list-view img {
+  display: none;
+}
+
+.directory-container.list-view p, a{
+    margin-left: 10px;
+}
+
+.directory-container.list-view h2 {
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+
+.menu {
+  display: flex;
+  justify-content: center; 
+  margin: 20px 0;
+}
+.menu button {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    background-color: #2a5b8b;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    align-items: center;
+}
+
+#grid::after {
+    content: "\1F5D2"; /* Unicode for grid icon */
+    margin-left: 8px;
+}
+
+#list::after {
+    content: "\1F5D3"; /* Unicode for list icon */
+    margin-left: 8px;
+}
+
+.menu button:hover {
+    background-color: #93b6da;
+}
+
+
+/* Footer */
+footer {
+    background-color: #eee;
+    padding: 1rem 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.footer-contact {
+    margin-bottom: 20px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;    
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #ddd;
+    bottom: 4px;
+}
+
+.social img {
+    width: 24px;
+    height: 24px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}

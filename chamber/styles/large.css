@@ -1,0 +1,71 @@
+@media screen and (min-width: 32rem) {
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: rgb(160, 178, 212);
+        position: relative;
+    }
+
+    .logo span {
+        width: 100%;
+        color: white;}
+
+    header, main, nav, footer {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+        border: none;
+        color: black;
+        background-color: rgb(160, 178, 212);
+        justify-self: end;
+        position: static;
+
+    }
+    .navigation ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .navigation a {
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+    }
+
+    .directory-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+    .directory-container.grid-view {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .directory-container.directory-container.grid-view h2 {
+        font-size: 1rem;
+    }
+
+    .directory-container.grid-view img {
+        width: 150px;
+        height: auto;
+    }
+
+    .directory-container.list-view h2 {
+        font-size: 1rem;
+    }
+
+    .directory-container p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Bright Horizons Consulting",
+      "address": "123 Liberty Ave, Accra, Ghana",
+      "phone": "+233 20 555 0101",
+      "website": "https://www.brighthorizons.com",
+      "image": "brighthorizons.jpg",
+      "membershipLevel": 3,
+      "description": "A business strategy and technology consulting firm helping companies achieve growth through innovation."
+    },
+    {
+      "name": "EcoWave Energy Ltd",
+      "address": "45 Beach Road, Takoradi, Ghana",
+      "phone": "+233 24 111 2233",
+      "website": "https://www.ecowaveenergy.com",
+      "image": "ecowave.jpg",
+      "membershipLevel": 2,
+      "description": "Renewable energy company specializing in wave and solar power solutions for coastal regions."
+    },
+    {
+      "name": "Golden Beans Coffee Co.",
+      "address": "9 Independence Street, Kumasi, Ghana",
+      "phone": "+233 26 909 8765",
+      "website": "https://www.goldenbeanscoffee.com",
+      "image": "goldenbeans.png",
+      "membershipLevel": 3,
+      "description": "Premium coffee producer sourcing sustainably grown beans from local Ghanaian farmers."
+    },
+    {
+      "name": "SafeNet Security Systems",
+      "address": "78 Peace Avenue, Tema, Ghana",
+      "phone": "+233 50 222 8899",
+      "website": "https://www.safenetsecurity.com",
+      "image": "safenet.png",
+      "membershipLevel": 2,
+      "description": "Provider of smart home and business security systems, surveillance, and alarm monitoring."
+    },
+    {
+      "name": "AquaPure Bottling Co.",
+      "address": "12 Blue Lagoon Rd, Cape Coast, Ghana",
+      "phone": "+233 54 333 7770",
+      "website": "https://www.aquapure.com",
+      "image": "aquapure.jpg",
+      "membershipLevel": 1,
+      "description": "Bottled water production company focused on sustainable packaging and water purification."
+    },
+    {
+      "name": "TechNova Innovations",
+      "address": "100 Silicon Plaza, Accra, Ghana",
+      "phone": "+233 27 888 9900",
+      "website": "https://www.technovainnovations.com",
+      "image": "technova.png",
+      "membershipLevel": 3,
+      "description": "Software development and IT consulting firm offering cloud, AI, and automation solutions."
+    },
+    {
+      "name": "GreenLeaf Organics",
+      "address": "56 Harvest Lane, Sunyani, Ghana",
+      "phone": "+233 25 404 5500",
+      "website": "https://www.greenleaforganics.com",
+      "image": "greenleaf.jpg",
+      "membershipLevel": 1,
+      "description": "Organic food producer and distributor promoting healthy eating and sustainable farming."
+    }
+  ]
+}
