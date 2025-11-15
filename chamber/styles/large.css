@@ -52,7 +52,7 @@
         gap: 20px;
     }
 
-    .directory-container.directory-container.grid-view h2 {
+    .directory-container.grid-view h2 {
         font-size: 1rem;
     }
 
@@ -90,7 +90,7 @@
         color: white;
     }
 
-    .intro-text h1 {
+    .intro-text h2 {
         font-size: 2rem;
         margin-bottom: 10px;
     }

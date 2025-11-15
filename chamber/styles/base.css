@@ -307,7 +307,7 @@ footer p {
     color: white;
 }
 
-.intro-text h1 {
+.intro-text h2 {
     font-size: 1rem;
     margin-bottom: 10px;
 }
@@ -326,14 +326,11 @@ footer p {
 }
 
 .event-section, .current-weather-section, .forecast-section {
-    background: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: center;
-}
-
-.event-section, .current-weather-section, .forecast-section {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
   padding: 0; 
   width: 70%;
   height: 180px;
@@ -343,8 +340,9 @@ footer p {
 
 
 
+
 .heading {
-  background-color:#4a90e2;
+  background-color:#93b6da;
   font-size: 2rem;
   border-radius: 4px 4px 0 0;
 }
