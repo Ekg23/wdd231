@@ -219,6 +219,11 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   });
 
+  //Timestamp
+  const timestampInput = document.getElementById('timestamp');
+  if (timestampInput) {
+    timestampInput.value = new Date().toISOString(); // ISO format timestamp
+  }
 
 
 });

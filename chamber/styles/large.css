@@ -120,5 +120,11 @@
         gap: 0;   
         align-items: start;
     }
+
+    .page-layout > h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        grid-column: 1 / -1; /* optional if inside a grid */
+    }
     
 }
