@@ -14,6 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const directoryContainer = document.getElementById('directory-container');
   const events = document.getElementById('events');
   const lastModified = document.lastModified;
+  const modalButtons = document.querySelectorAll("[data-modal]");
+
 
   document.getElementById("lastModified").textContent = `Last Modified: ${lastModified}`;
 
@@ -198,8 +200,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+ 
   apiFetch();
   getForecast();
+  
+
+  document.querySelectorAll(".open-modal").forEach(btn => {
+      btn.addEventListener("click", () => {
+          const dialog = btn.nextElementSibling;
+          dialog.showModal();
+      });
+  });
+
+  // Close the dialog when clicking the close button
+  document.querySelectorAll("dialog .close").forEach(closeBtn => {
+      closeBtn.addEventListener("click", () => {
+          closeBtn.closest("dialog").close();
+      });
+  });
+
+
 
 });
 

@@ -113,4 +113,12 @@
         height: auto;
     }
 
+
+    .page-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;   
+        align-items: start;
+    }
+    
 }
