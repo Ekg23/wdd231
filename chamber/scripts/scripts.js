@@ -1,10 +1,4 @@
-//const hamButton = document.getElementById('ham-btn');
-//const navMenu = document.getElementById('nav-menu'); 
-//const gridButton = document.getElementById('grid');
-//const listButton = document.getElementById('list'); 
-//const directoryContainer = document.getElementById('directory-container');
-//const events = document.getElementById('events');
-
+import { places } from "../data/places.mjs";
 
 document.addEventListener('DOMContentLoaded', () => {
   const hamButton = document.getElementById('ham-btn');
@@ -15,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const events = document.getElementById('events');
   const lastModified = document.lastModified;
   const modalButtons = document.querySelectorAll("[data-modal]");
+  const container = document.querySelector('.discover-grid');
 
 
   document.getElementById("lastModified").textContent = `Last Modified: ${lastModified}`;
@@ -126,7 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
     return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
   }
 
-
   function displayResults(data) {
     const card1 = document.createElement('div');
 
@@ -197,14 +191,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.getElementById("forecast").appendChild(card2);
   }
-
-
-
  
   apiFetch();
   getForecast();
-  
 
+  // Modal functionality
+  // Open the dialog when clicking the button
   document.querySelectorAll(".open-modal").forEach(btn => {
       btn.addEventListener("click", () => {
           const dialog = btn.nextElementSibling;
@@ -224,7 +216,41 @@ document.addEventListener('DOMContentLoaded', () => {
   if (timestampInput) {
     timestampInput.value = new Date().toISOString(); // ISO format timestamp
   }
+  // Display places from places.mjs
+  places.forEach((place) => {
+    const placeCard = `
+    <section class="place-card">
+      <img src="${place.image}" alt="Image of ${place.name}"  width="300" height="200">
+      <h2>${place.name}</h2>
+      <address><em>Address: ${place.address}</em></address>
+      <p>${place.description}</p>
+      <button>More Info</button>
+    </section>
+    `;
+    container.innerHTML += placeCard;
+  });
+ 
 
+ // localStorage last-visit message 
+ const visitMsg = document.getElementById('visit-msg');
+ const lastVisit = localStorage.getItem('chamberLastVisitDiscover');
+ const now = Date.now();
+ localStorage.setItem('chamberLastVisitDiscover', now); 
+
+ if (!lastVisit) {
+    visitMsg.textContent = 'Welcome! Let us know if you have any questions.';
+  } else {
+      const diff = now - Number(lastVisit);
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+      if (days < 1) {
+          visitMsg.textContent = 'Back so soon! Awesome!';
+      } else if (days === 1) {
+          visitMsg.textContent = 'You last visited 1 day ago.';
+      } else {
+          visitMsg.textContent = `You last visited ${days} days ago.`;
+      }
+    } 
 
 });
 

@@ -127,4 +127,19 @@
         grid-column: 1 / -1; /* optional if inside a grid */
     }
     
+
+    .place-card {
+        grid-template-areas: 
+        "image name"
+        "image address"
+        "image description"
+        "image learn";
+    }
+
+    .discover-grid .place-card img {
+        width: 300px;
+        
+    }
 }
+
+
