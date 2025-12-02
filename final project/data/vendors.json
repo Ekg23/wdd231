@@ -1,0 +1,17 @@
+[
+  {"id":1,"name":"Green Acre Farm","type":"Vegetables","phone":"555-1111","hours":"8-1","image":"images/vendor1.webp"},
+  {"id":2,"name":"Sunny Orchard","type":"Fruit","phone":"555-2222","hours":"9-2","image":"images/vendor2.webp"},
+  {"id":3,"name":"Happy Honey","type":"Honey","phone":"555-3333","hours":"8-12","image":"images/vendor3.webp"},
+  {"id":4,"name":"Fresh Eggs Co","type":"Eggs","phone":"555-4444","hours":"8-12","image":"images/vendor4.webp"},
+  {"id":5,"name":"Baker’s Choice","type":"Bread","phone":"555-5555","hours":"9-1","image":"images/vendor5.webp"},
+  {"id":6,"name":"Herbal Roots","type":"Herbs","phone":"555-6666","hours":"8-1","image":"images/vendor6.webp"},
+  {"id":7,"name":"CheeseCraft","type":"Cheese","phone":"555-7777","hours":"10-2","image":"images/vendor7.webp"},
+  {"id":8,"name":"Local Deli","type":"Meats","phone":"555-8888","hours":"9-2","image":"images/vendor8.webp"},
+  {"id":9,"name":"Sweet Treats","type":"Desserts","phone":"555-9999","hours":"8-12","image":"images/vendor9.webp"},
+  {"id":10,"name":"Bloom Fields","type":"Flowers","phone":"555-1010","hours":"8-1","image":"images/vendor10.webp"},
+  {"id":11,"name":"Fresh Dairy","type":"Milk","phone":"555-1112","hours":"9-1","image":"images/vendor11.webp"},
+  {"id":12,"name":"Good Roast","type":"Coffee","phone":"555-1212","hours":"8-12","image":"images/vendor12.webp"},
+  {"id":13,"name":"Craft Creations","type":"Handmade","phone":"555-1313","hours":"8-1","image":"images/vendor13.webp"},
+  {"id":14,"name":"Grain Mill","type":"Wheat","phone":"555-1414","hours":"8-12","image":"images/vendor14.webp"},
+  {"id":15,"name":"Pure Juice","type":"Juices","phone":"555-1515","hours":"9-1","image":"images/vendor15.webp"}
+]

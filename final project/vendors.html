@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="vendors page for my final project website">
+    <meta name="author" content="Geoffrey Etu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/market.js" defer></script>
+    <title>Vendors  | Farmers Friend</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo2.webp" alt="Logo">
+        <span>Farmers Market</span>
+        <button class="hamburger" id="ham-btn" aria-label="Open navigation menu"></button>
+        <nav class="navigation" id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vendors.html">Vendors</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>     
+    </header>
+    <main>
+        <section class="vendors">
+            <h1>Our Vendors</h1>
+            <section id="vendors-list"></section>
+                
+        </section>
+          <!-- Modal -->
+        <div id="modal" aria-hidden="true">
+            <div class="modal-content">
+            <button class="close" aria-label="Close">×</button>
+            <h2 class="modal-title"></h2>
+            <div class="modal-body"></div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-contact">
+            <p><strong>Farmers Market</strong></p>
+            <p>Address: 8 Nii tempon Adenta, Ghana</p>
+            <p>Email: info@farmersmarket.org </p>
+            <p>Phone: (233) 555 1024</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/geoffrey.etu.7" target="_blank">
+                <img src="images/facebook_icon.svg" alt="Facebook Logo" width="16" height="16">
+            </a>
+            <a href="https://twitter.com/GeoffreyEtu" target="_blank">
+                <img src="images/twitter_icon.svg" alt="Twitter Logo" width="16" height="16">
+            </a>
+            <a href="https://www.instagram.com/geoffrey_etu/" target="_blank">
+                <img src="images/instagram_icon.svg" alt="Instagram Logo" width="16" height="16">
+            </a>
+        </div>
+        <div class="footer-copy">
+            <p>WDD 231 Final Project</p>
+            <p>Geoffrey Etu</p>
+            <p>© 2024 Farmers Friend. All rights reserved.</p>
+            <p><span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site plan for my final project website">
+    <meta name="author" content="Geoffrey Etu">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/market.js" defer></script>
+    <title>Home Page | Farmers Friend</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo2.webp" alt="Logo">
+        <span>Farmers Market</span>
+        <button class="hamburger" id="ham-btn" aria-label="Open navigation menu"></button>
+        <nav class="navigation" id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vendors.html">Vendors</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>     
+    </header>
+    <main>
+        <section class="banner">
+            <img src="images/banner.webp" alt="Banner Image">
+            <h1>Welcome to the Farmers Market</h1>
+            <p>Your one-stop shop for fresh produce and local goods.</p>
+        </section>
+        <section class="overview">
+            <h2>Overview</h2>
+            <p>At Farmers Market, we connect you with the best local vendors offering fresh fruits, vegetables, baked goods, and dairy products. 
+            Our mission is to support local farmers and provide our community with healthy, sustainable food options.
+            </p>
+        </section>
+        <section id="featured-items">
+            <h2>Featured Seasonal Items</h2>
+            <div id="items-container" class="items"></div>
+        </section>
+        <section class="vendors">
+            <h2>Our Vendors</h2>
+            <div class="vendor-list">
+                <div class="vendor-item">
+                    <img src="images/vendor1.webp" alt="Vendor 1">
+                    <h3>Fresh Farms</h3>
+                    <p>Organic fruits and vegetables.</p>
+                </div>
+                <div class="vendor-item">
+                    <img src="images/vendor2.webp" alt="Vendor 2">
+                    <h3>Bake House</h3>
+                    <p>Delicious homemade baked goods.</p>
+                </div>
+                <div class="vendor-item">
+                    <img src="images/vendor3.webp" alt="Vendor 3">
+                    <h3>Dairy Delight</h3>
+                    <p>Fresh dairy products from local farms.</p>
+                </div>    
+            </div>
+            <div class="cta">
+                <button class="btn"><a href="vendors.html" class="btn">See All Vendors</a></button>
+            </div>
+            
+            
+        </section>
+    </main>
+    <footer>
+        <div class="footer-contact">
+            <p><strong>Farmers Market</strong></p>
+            <p>Address: 8 Nii tempon Adenta, Ghana</p>
+            <p>Email: info@farmersmarket.org </p>
+            <p>Phone: (233) 555 1024</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/geoffrey.etu.7" target="_blank">
+                <img src="images/facebook_icon.svg" alt="Facebook Logo" width="16" height="16">
+            </a>
+            <a href="https://twitter.com/GeoffreyEtu" target="_blank">
+                <img src="images/twitter_icon.svg" alt="Twitter Logo" width="16" height="16">
+            </a>
+            <a href="https://www.instagram.com/geoffrey_etu/" target="_blank">
+                <img src="images/instagram_icon.svg" alt="Instagram Logo" width="16" height="16">
+            </a>
+        </div>
+        <div class="footer-copy">
+            <p>WDD 231 Final Project</p>
+            <p>Geoffrey Etu</p>
+            <p>© 2024 Farmers Friend. All rights reserved.</p>
+            <p><span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

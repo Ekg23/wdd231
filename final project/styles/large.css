@@ -1,0 +1,64 @@
+@media screen and (min-width: 32rem) {
+    body {
+        font-size: 18px;
+    }
+
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #FAF7F2;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        border-radius: 8px;
+    }
+
+    .navigation ul {
+        list-style-type: none;
+        display: flex;
+        gap: 20px;
+        background-color: #4A7C59;
+        padding: 8px 16px;
+        flex-direction: row;
+        border-radius: 8px;
+        
+    }
+
+    .navigation ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        border-bottom: none;
+        padding: 6px 12px;
+        border-radius: 6px;
+
+    }
+
+    .navigation ul li a:hover {
+        background-color: #D9C7A3;
+
+    }
+
+    .banner h1 {
+        
+        font-size: 3rem;
+    }
+
+    .banner p {
+        font-size: 1.5rem;
+    }
+
+    #vendors-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}    

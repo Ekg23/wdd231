@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', sans-serif;
+    color: #333;
+}
+
+span {
+    font-family: 'Lora', sans-serif;
+    font-size: 2.5rem;
+    color: #4A7C59;
+    font-weight: bold;
+}
+
+body {
+    background-color: #FAF7F2;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.36;
+    color: #555;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FAF7F2;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    flex-wrap: wrap; 
+}
+
+header img {
+    height: 70px;
+}
+
+
+/* Hamburger Menu Button */
+.hamburger {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 1.5rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+
+.navigation {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.navigation.show {
+  display: block;
+  background-color: #2a5b8b;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #4A7C59;
+    
+}
+
+.navigation ul li a {
+    display: block;
+    padding: 0.8rem 0 0.8rem 0;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+    margin: 0;
+}
+
+.navigation li.current {
+  background-color: #3f4143;
+}
+
+.navigation a:hover {
+  background-color: #D9C7A3;
+}
+
+.banner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    position: relative;
+}
+
+.banner h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.banner p {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.overview {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    text-align: center;
+}
+
+/* Featured Items Section */
+#featured-items {
+    text-align: center;
+    margin: 30px auto;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    width: 200px;
+    border-radius: 10px;
+    background: #f8f8f8;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.item img {
+    width: 100%;
+    border-radius: 8px;
+}
+.item h3 {
+    margin: 10px 0 5px;
+}
+
+.item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+}
+
+/* Vendors Section */
+
+.vendors .vendor-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px 20px;
+    margin: 10px auto;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.vendors h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #4A7C59;
+}
+
+.vendor-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.vendor-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #4A7C59;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin: 0 auto
+}
+
+.btn:hover {
+    background-color: #3b5e43;
+}
+
+.cta
+{
+    text-align: center;
+}
+/* footer styles */
+/* Footer */
+footer {
+  background-color: #eee;
+  padding: 1rem 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.footer-contact {
+    margin-bottom: 20px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;    
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: 1px solid #ddd;
+    bottom: 4px;
+}
+
+.social img {
+    width: 24px;
+    height: 24px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
+
+
+/* Vendor Page Styles */
+#vendors-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    
+}
+
+#vendors-list .vendor-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px auto;
+    background: #f8f8f8;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 350px;
+    text-align: center;
+    
+}
