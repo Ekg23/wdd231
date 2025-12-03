@@ -220,7 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
   places.forEach((place) => {
     const placeCard = `
     <section class="place-card">
-      <img src="${place.image}" alt="Image of ${place.name}"  width="300" height="200">
+      <img src="${place.image}" alt="Image of ${place.name}"  width="300" height="200" loading="lazy">
       <h2>${place.name}</h2>
       <address><em>Address: ${place.address}</em></address>
       <p>${place.description}</p>
