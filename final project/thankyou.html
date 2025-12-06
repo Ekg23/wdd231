@@ -5,11 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="vendors page for my final project website">
     <meta name="author" content="Geoffrey Etu">
-    <meta property="og:title" content="Our Vendors – Farmers Market">
-    <meta property="og:description" content="Meet the vendors who bring fresh produce, handmade crafts, and unique goods to our farmers market.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://Ekg23.github.io/WDD231/final%project/vendors.html">
-    <meta property="og:image" content="https://Ekg23.github.io/WDD231/final%project/images/banner.webp">
     <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,9 +12,9 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/market.js" defer></script>
-    <title>Vendors  | Farmers Friend</title>
+    <title>Thank you  | Farmers Friend</title>
 </head>
-<body>
+<body class="thank-you-page">
     <header>
         <img src="images/logo2.webp" alt="Logo">
         <span>Farmers Market</span>
@@ -33,20 +28,12 @@
         </nav>     
     </header>
     <main>
-        <section class="vendors">
-            <h1>Our Vendors</h1>
-            <section id="vendors-list"></section>
-                
+        <section class="thank-you">
+            <h1>Thank You for Contacting Us!</h1>
+            <div id="result"></div>
+            <p><a href="index.html">Return to Home Page</a></p>
         </section>
-          <!-- Modal -->
-        <div id="modal" aria-hidden="true">
-            <dialog id="vendor-modal">
-                <button id="close-button" aria-label="Close modal">❌</button>
-                <div id="modal-content"></div>
-            </dialog>    
-        </div>
-    </main>
-    <footer>
+     <footer>
         <div class="footer-contact">
             <p><strong>Farmers Market</strong></p>
             <p>Address: 8 Nii tempon Adenta, Ghana</p>
@@ -67,7 +54,7 @@
         <div class="footer-copy">
             <p>WDD 231 Final Project</p>
             <p>Geoffrey Etu</p>
-            <p>© <span id="currentyear"></span> Farmers Market. All rights reserved.</p>
+            <p>© <span id="currentyear"> </span>Farmers Market. All rights reserved.</p>
             <p><span id="lastModified"></span></p>
         </div>
     </footer>

@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site plan for my final project website">
     <meta name="author" content="Geoffrey Etu">
+    <meta property="og:title" content="Farmers Market – Fresh Local Produce">
+    <meta property="og:description" content="Discover fresh produce, seasonal items, and local vendors at our community farmers market.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://Ekg23.github.io/WDD231/final%project/index.html">
+    <meta property="og:image" content="https://Ekg23.github.io/WDD231/final%project/images/banner.webp">
+    <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -20,7 +26,7 @@
         <button class="hamburger" id="ham-btn" aria-label="Open navigation menu"></button>
         <nav class="navigation" id="nav-menu">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li class="current"><a href="index.html">Home</a></li>
                 <li><a href="vendors.html">Vendors</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -37,6 +43,12 @@
             <p>At Farmers Market, we connect you with the best local vendors offering fresh fruits, vegetables, baked goods, and dairy products. 
             Our mission is to support local farmers and provide our community with healthy, sustainable food options.
             </p>
+        </section>
+        <section class="news-section">
+            <h2>Latest News</h2>
+            <div class="news">
+
+            </div>
         </section>
         <section id="featured-items">
             <h2>Featured Seasonal Items</h2>
@@ -89,7 +101,7 @@
         <div class="footer-copy">
             <p>WDD 231 Final Project</p>
             <p>Geoffrey Etu</p>
-            <p>© 2024 Farmers Friend. All rights reserved.</p>
+            <p>© <span id="currentyear"> </span>Farmers Market. All rights reserved.</p>
             <p><span id="lastModified"></span></p>
         </div>
     </footer>

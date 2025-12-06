@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact us for inquiries, vendor information, and support. Get in touch with the Farmer's Market team through our contact form or email.">
+    <meta name="author" content="Geoffrey Etu">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <meta property="og:title" content="Contact Us - Farmer's Market">
+    <meta property="og:description" content="Reach out to the Farmer's Market team for questions, vendor details, or general inquiries.">
+    <meta property="og:image" content="https://yourwebsite.com/images/banner.webp">
+    <meta property="og:url" content="https://Ekg23.github.io/WDD231/final%project/contact.html">
+    <meta property="og:type" content="website">
+    <script src="scripts/market.js" defer></script>
+    <title>Contact | Farmers Friend</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo2.webp" alt="Logo">
+        <span>Farmers Market</span>
+        <button class="hamburger" id="ham-btn" aria-label="Open navigation menu"></button>
+        <nav class="navigation" id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="vendors.html">Vendors</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>     
+    </header>
+    <main>
+        <section class="mission">
+            <h2>Community Centered</h2>
+            <p>“Our mission is to connect our community with fresh, locally grown produce and handcrafted goods while supporting local farmers, 
+                artisans, and small businesses.”
+            </p>
+        </section>
+        <section class="history">
+            <h2>History</h2>
+            <p>
+                Established in 2010, the Farmers Market began as a small gathering of local farmers and artisans dedicated to providing 
+                fresh, sustainable products to the community. Over the years, it has grown into a vibrant marketplace that celebrates 
+                local culture, supports small businesses, and fosters community connections. Our commitment to quality and sustainability 
+                remains at the heart of everything we do.
+            </p>
+        </section>
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>If you have any questions, inquiries, or would like to become a vendor, please reach out to us using the information below:</p>
+            <ul>
+                <li><strong>Email:</strong>
+                    <a href="mailto:info@farmersmarket.com"></a>
+                </li>
+                <li><strong>Phone:</strong> (233) 555 1024</li>
+                <li><strong>Address:</strong> 8 Nii tempon Adenta, Ghana</li>
+            </ul>
+            <h3>Market Hours</h3>
+            <ul>
+                <li><strong>Monday - Friday:</strong> 8:00 AM - 6:00 PM</li>
+                <li><strong>Saturday:</strong> 7:00 AM - 5:00 PM</li>
+                <li><strong>Sunday:</strong> Closed</li>
+            </ul>
+        </section>
+        <section class="contact-form">
+            <h2>Contact Form</h2>
+            <form action="thankyou.html" method="GET">
+                <label for="name">Name:<input type="text" id="name" name="name" required></label>
+                <label for="email">Email:<input type="email" id="email" name="_replyto" required></label>
+                <label for="message">Message:<textarea id="message" name="message" rows="5" required></textarea></label>
+                <button type="submit" class="btn">Send Message</button>
+            </form>            
+        </section>
+    </main>
+    <footer>
+        <div class="footer-contact">
+            <p><strong>Farmers Market</strong></p>
+            <p>Address: 8 Nii tempon Adenta, Ghana</p>
+            <p>Email: info@farmersmarket.org </p>
+            <p>Phone: (233) 555 1024</p>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/geoffrey.etu.7" target="_blank">
+                <img src="images/facebook_icon.svg" alt="Facebook Logo" width="16" height="16">
+            </a>
+            <a href="https://twitter.com/GeoffreyEtu" target="_blank">
+                <img src="images/twitter_icon.svg" alt="Twitter Logo" width="16" height="16">
+            </a>
+            <a href="https://www.instagram.com/geoffrey_etu/" target="_blank">
+                <img src="images/instagram_icon.svg" alt="Instagram Logo" width="16" height="16">
+            </a>
+        </div>
+        <div class="footer-copy">
+            <p>WDD 231 Final Project</p>
+            <p>Geoffrey Etu</p>
+            <p>© <span id="currentyear"> </span>Farmers Market. All rights reserved.</p>
+            <p><span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
