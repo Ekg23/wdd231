@@ -98,10 +98,7 @@ header img {
     padding: 0;
 }
 
-.navigation li.current {
-  background-color: #3f4143;
-  border-radius: 8px;
-}
+
 
 .navigation a:hover {
   background-color: #D9C7A3;
@@ -116,7 +113,7 @@ header img {
 
 .banner h1 {
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
@@ -126,7 +123,7 @@ header img {
 
 .banner p {
     position: absolute;
-    top: 45%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
